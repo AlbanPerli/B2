@@ -524,6 +524,7 @@ Tu réponds STRICTEMENT en JSON, SANS texte autour, au format:
                 self.current_skill_name = skill_name
         else:
             # pas en attente de slot -> simple routing
+            print("MEssage utilisateur reçu:", user_message)
             skill_name = self.classify_intent(user_message)
             self.current_skill_name = skill_name
             print(f"[DEBUG] Nouveau skill sélectionné: {skill_name}")
