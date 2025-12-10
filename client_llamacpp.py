@@ -9,7 +9,7 @@ def send_llama_chat(
     user_content: str,
     system_prompt: str = "You are a helpful assistant.",
     history: Optional[List[Dict[str, str]]] = None,
-    temperature: float = 0.7,
+    temperature: float = 0.0,
     max_tokens: int = 512,
 ) -> str:
     """
